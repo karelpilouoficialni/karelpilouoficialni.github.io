@@ -129,6 +129,7 @@ li a[href="secret/secretpage.html"] {
   text-decoration: none;
   animation: rainbowPulse 3.5s ease-in-out infinite;
   z-index: 9999;
+  justify-content: right;
 }
 
 li a[href="secret/secretpage.html"]:hover {
