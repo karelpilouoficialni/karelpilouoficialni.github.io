@@ -71,7 +71,6 @@ iframe {
 
 li {
   margin-top: 10px;
-  font-size: 16px;
 }
 
 h1.fav-playlists {
@@ -89,6 +88,7 @@ h6.footer {
 nav {
   background-color: #111;
   padding: 10px;
+  text-align: center;
 }
 
 nav ul {
@@ -121,15 +121,13 @@ h6.footer {
 }
 
 li a[href="secret/secretpage.html"] {
-  position: fixed;
+  position: absolute;
+  float: right;
   top: 16px;
   right: 20px;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
   animation: rainbowPulse 3.5s ease-in-out infinite;
-  z-index: 9999;
-  justify-content: right;
 }
 
 li a[href="secret/secretpage.html"]:hover {
@@ -216,7 +214,6 @@ li a[href="secret/secretpage.html"]:hover {
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
