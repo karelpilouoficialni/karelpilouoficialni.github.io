@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  color: #f5f5f5;
 }
 
 h1 {
@@ -36,6 +37,11 @@ li {
 
 a {
   text-decoration: none;
+  color: #1e90ff;
+}
+
+a:hover {
+  color: #87cefa;
 }
 
 nav {
@@ -57,7 +63,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 5px 10px;
-  color: #fff;
+  color: #f5f5f5;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -72,11 +78,6 @@ h6.footer {
   margin-top: 50px;
 }
 
-body {
-  background-color: #2c2f33;
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #ffffff;
-}
 
 .table-container {
   width: 80%;
