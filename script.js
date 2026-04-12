@@ -1,6 +1,6 @@
 function toggleThemes() {
     const themes = document.getElementById("themes");
-    themes.style.display = themes.style.display === "none" ? "block" : "none";
+    themes.classList.toggle("open");
   }
 
   function toggleSkills(id) {
@@ -10,5 +10,5 @@ function toggleThemes() {
   
   function toggleComputer() {
     const section = document.getElementById("computerThemes");
-    section.style.display = section.style.display === "none" ? "block" : "none";
+    section.classList.toggle("open");
   }
