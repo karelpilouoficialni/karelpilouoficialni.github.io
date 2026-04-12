@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("codeInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      checkCode();
+    }
+  });
+});
+
 function checkCode() {
   const correctCode = "goodbyeworld!";
   const input = document.getElementById("codeInput").value;
