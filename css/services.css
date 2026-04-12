@@ -102,6 +102,14 @@ h6.footer {
   background: #5865f2;
 }
 
+.computer-header {
+  background: #3ba55c;
+}
+
+.computer-header:hover {
+  background: #2d8a4a;
+}
+
 .theme {
   background: #2c2f33;
   font-size: 16px;
