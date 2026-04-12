@@ -34,8 +34,8 @@ li {
   margin-top: 10px;
 }
 
-a {
-  text-decoration: none;
+a:hover {
+  color: #87cefa;
 }
 
 nav {
@@ -64,6 +64,15 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #555;
+}
+
+nav ul li a.active {
+  background-color: #dc3545;
+}
+
+nav ul li a.active:hover {
+  background-color: #dc3545;
+  transform: none;
 }
 
 @media (max-width: 768px) {
