@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("codeInput").addEventListener("keydown", function(e) {
-    if (e.key === "Enter") {
-      checkCode();
-    }
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("codeInput")
+    .addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        checkCode();
+      }
+    });
 });
 
 function checkCode() {

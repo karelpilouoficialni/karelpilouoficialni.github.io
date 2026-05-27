@@ -36,7 +36,9 @@ button:hover {
   border-color: #9b59b6;
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 0 35px rgba(155, 89, 182, 0.6), 0 10px 25px rgba(155, 89, 182, 0.4);
+  box-shadow:
+    0 0 35px rgba(155, 89, 182, 0.6),
+    0 10px 25px rgba(155, 89, 182, 0.4);
 }
 
 button:active {
@@ -192,5 +194,7 @@ h6.footer {
   background: rgba(88, 101, 242, 0.5);
   border-color: #5865f2;
   transform: translateY(-3px);
-  box-shadow: 0 0 40px rgba(88, 101, 242, 0.7), 0 10px 30px rgba(88, 101, 242, 0.5);
+  box-shadow:
+    0 0 40px rgba(88, 101, 242, 0.7),
+    0 10px 30px rgba(88, 101, 242, 0.5);
 }

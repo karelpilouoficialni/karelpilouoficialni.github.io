@@ -1,139 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
-    <link rel="icon" type="image/x-icon" href="resources/favicon1.ico">
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="icon" type="image/x-icon" href="resources/favicon1.ico" />
+    <link rel="stylesheet" href="css/services.css" />
     <script src="script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="spotify.html">Spotify Playlists</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="spotify.html">Spotify Playlists</a></li>
+      </ul>
     </nav>
     <h1>Services</h1>
     <ul>
-
-        <!-- discord -->
-        <div class="table-container">
-
-            <div class="row header" onclick="toggleThemes()">
-                <span class="icon">💬</span> Discord-Related Services
-            </div>
-
-            <div id="themes" class="category-content">
-
-                <div class="row theme" onclick="toggleSkills('skills1')">
-                    <span class="theme-icon">🛠️</span> 1. Server Setup & Customization
-                </div>
-                <div class="skills" id="skills1">
-                    <ul>
-                        <li>Discord Server Creation</li>
-                        <li>Channel & category setup</li>
-                        <li>Permission Configuration</li>
-                        <li>Welcome & onboarding system</li>
-                        <li>Verification & rules enforcement</li>
-                    </ul>
-                </div>
-
-                <div class="row theme" onclick="toggleSkills('skills2')">
-                    <span class="theme-icon">🤖</span> 2. Bot Services
-                </div>
-                <div class="skills" id="skills2">
-                    <ul>
-                        <li>Bot Setup & Configuration (Dyno, MEE6, Carl-bot, etc.)</li>
-                        <li>Moderation bot configuration</li>
-                        <li>Ticket & support systems</li>
-                        <li>Economy & Reward Bots</li>
-                    </ul>
-                </div>
-
-                <div class="row theme" onclick="toggleSkills('skills3')">
-                    <span class="theme-icon">🎨</span> 3. Design & Branding
-                </div>
-                <div class="skills" id="skills3">
-                    <ul>
-                        <li>Server banners & icons</li>
-                        <li>Custom emojis & stickers</li>
-                        <li>Role icons & visuals</li>
-                    </ul>
-                </div>
-
-                <div class="row theme" onclick="toggleSkills('skills4')">
-                    <span class="theme-icon">🛡️</span> 4. Moderation & Security
-                </div>
-                <div class="skills" id="skills4">
-                    <ul>
-                        <li>Auto-moderation systems</li>
-                        <li>Anti-raid & anti-spam protection</li>
-                        <li>Logging & audit channels</li>
-                        <li>Staff permissions & tools</li>
-                    </ul>
-                </div>
-
-                <div class="row theme" onclick="toggleSkills('skills5')">
-                    <span class="theme-icon">📈</span> 5. Growth & Engagement
-                </div>
-                <div class="skills" id="skills5">
-                    <ul>
-                        <li>Reaction roles & self-roles</li>
-                        <li>Gamification & rewards</li>
-                        <li>Community events & scheduling</li>
-                        <li>Leveling & XP Systems</li>
-                    </ul>
-                </div>
-
-            </div>
+      <!-- discord -->
+      <div class="table-container">
+        <div class="row header" onclick="toggleThemes()">
+          <span class="icon">💬</span> Discord-Related Services
         </div>
 
-        <!-- computer -->
-        <div class="table-container">
+        <div id="themes" class="category-content">
+          <div class="row theme" onclick="toggleSkills('skills1')">
+            <span class="theme-icon">🛠️</span> 1. Server Setup & Customization
+          </div>
+          <div class="skills" id="skills1">
+            <ul>
+              <li>Discord Server Creation</li>
+              <li>Channel & category setup</li>
+              <li>Permission Configuration</li>
+              <li>Welcome & onboarding system</li>
+              <li>Verification & rules enforcement</li>
+            </ul>
+          </div>
 
-            <div class="row header computer-header" onclick="toggleComputer()">
-                <span class="icon">💻</span> Computer-Related Services
-            </div>
+          <div class="row theme" onclick="toggleSkills('skills2')">
+            <span class="theme-icon">🤖</span> 2. Bot Services
+          </div>
+          <div class="skills" id="skills2">
+            <ul>
+              <li>Bot Setup & Configuration (Dyno, MEE6, Carl-bot, etc.)</li>
+              <li>Moderation bot configuration</li>
+              <li>Ticket & support systems</li>
+              <li>Economy & Reward Bots</li>
+            </ul>
+          </div>
 
-            <div id="computerThemes" class="category-content">
+          <div class="row theme" onclick="toggleSkills('skills3')">
+            <span class="theme-icon">🎨</span> 3. Design & Branding
+          </div>
+          <div class="skills" id="skills3">
+            <ul>
+              <li>Server banners & icons</li>
+              <li>Custom emojis & stickers</li>
+              <li>Role icons & visuals</li>
+            </ul>
+          </div>
 
-                <div class="row theme" onclick="toggleSkills('writeSkills')">
-                    <span class="theme-icon">✍️</span> 1. Writing & Content
-                </div>
-                <div class="skills" id="writeSkills">
-                    <ul>
-                        <li>Story writing</li>
-                        <li>Editing & proofreading</li>
-                        <li>Blog posts & articles</li>
-                        <li>AI-assisted content creation</li>
-                    </ul>
-                </div>
+          <div class="row theme" onclick="toggleSkills('skills4')">
+            <span class="theme-icon">🛡️</span> 4. Moderation & Security
+          </div>
+          <div class="skills" id="skills4">
+            <ul>
+              <li>Auto-moderation systems</li>
+              <li>Anti-raid & anti-spam protection</li>
+              <li>Logging & audit channels</li>
+              <li>Staff permissions & tools</li>
+            </ul>
+          </div>
 
-                <div class="row theme" onclick="toggleSkills('supportSkills')">
-                    <span class="theme-icon">🔧</span> 2. Computer Help & Support
-                </div>
-                <div class="skills" id="supportSkills">
-                    <ul>
-                        <li>Software installation & setup</li>
-                        <li>System optimization</li>
-                        <li>PC troubleshooting</li>
-                        <li>Remote technical support</li>
-                        <li>Security & backups</li>
-                    </ul>
-                </div>
+          <div class="row theme" onclick="toggleSkills('skills5')">
+            <span class="theme-icon">📈</span> 5. Growth & Engagement
+          </div>
+          <div class="skills" id="skills5">
+            <ul>
+              <li>Reaction roles & self-roles</li>
+              <li>Gamification & rewards</li>
+              <li>Community events & scheduling</li>
+              <li>Leveling & XP Systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-            </div>
+      <!-- computer -->
+      <div class="table-container">
+        <div class="row header computer-header" onclick="toggleComputer()">
+          <span class="icon">💻</span> Computer-Related Services
         </div>
 
+        <div id="computerThemes" class="category-content">
+          <div class="row theme" onclick="toggleSkills('writeSkills')">
+            <span class="theme-icon">✍️</span> 1. Writing & Content
+          </div>
+          <div class="skills" id="writeSkills">
+            <ul>
+              <li>Story writing</li>
+              <li>Editing & proofreading</li>
+              <li>Blog posts & articles</li>
+              <li>AI-assisted content creation</li>
+            </ul>
+          </div>
+
+          <div class="row theme" onclick="toggleSkills('supportSkills')">
+            <span class="theme-icon">🔧</span> 2. Computer Help & Support
+          </div>
+          <div class="skills" id="supportSkills">
+            <ul>
+              <li>Software installation & setup</li>
+              <li>System optimization</li>
+              <li>PC troubleshooting</li>
+              <li>Remote technical support</li>
+              <li>Security & backups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </ul>
-    <h6 class="footer"> &copy;Maxik, 2026. Created with Github Pages</h6>
-</body>
-
+    <h6 class="footer">&copy;Maxik, 2026. Created with Github Pages</h6>
+  </body>
 </html>
