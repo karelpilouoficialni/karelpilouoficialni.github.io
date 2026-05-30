@@ -1,0 +1,452 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("/resources/background.gif") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h2 {
+  margin-top: 20px;
+  color: #f5f5f5;
+  font-size: 18px;
+}
+
+ul {
+  margin-top: 10px;
+  font-size: 16px;
+  list-style-type: none;
+  padding: 0;
+  color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+a:hover {
+  color: #87cefa;
+}
+
+nav {
+  background-color: #111;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 5px 10px;
+  color: #f5f5f5;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+nav ul li a.active {
+  background-color: #dc3545;
+}
+
+nav ul li a.active:hover {
+  background-color: #dc3545;
+  transform: none;
+}
+
+button {
+  background-color: rgba(128, 90, 213, 0.15);
+  border: 2px solid rgba(128, 90, 213, 0.6);
+  border-radius: 8px;
+  color: #dcd6f7;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 12px 24px;
+  text-align: center;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(128, 90, 213, 0.4);
+  border-color: #9b59b6;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px rgba(155, 89, 182, 0.6), 0 10px 25px rgba(155, 89, 182, 0.4);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+iframe {
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+h6.footer {
+  color: #888;
+  font-size: 14px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* ===== Index page ===== */
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-grid a button {
+  width: 100%;
+  opacity: 0;
+  animation: fadeInUp 3.5s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.discord-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeInUp 3.5s forwards;
+}
+
+.discord-button a button {
+  background: rgba(88, 101, 242, 0.2);
+  border: 2px solid rgba(88, 101, 242, 0.5);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(88, 101, 242, 0.2);
+}
+
+.discord-button a button:hover {
+  background: rgba(88, 101, 242, 0.5);
+  border-color: #5865f2;
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(88, 101, 242, 0.7), 0 10px 30px rgba(88, 101, 242, 0.5);
+}
+
+/* ===== About Me page ===== */
+
+.aboutme h1 {
+  margin-bottom: 30px;
+}
+
+.aboutme h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #5865f2;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.aboutme li {
+  margin: 10px 0;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.card {
+  background: rgba(35, 39, 42, 0.95);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid rgba(88, 101, 242, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 20px rgba(88, 101, 242, 0.2);
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  margin: 10px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 15px;
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #72767d;
+  display: inline-block;
+  min-width: 80px;
+}
+
+.lang-level {
+  display: inline-block;
+  background: #5865f2;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.hobbies li, .skills-list li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.hobbies li::before, .skills-list li::before {
+  content: "•";
+  color: #5865f2;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  line-height: 16px;
+}
+
+/* ===== Services page ===== */
+
+.table-container {
+  width: 80%;
+  margin: 50px auto;
+  background: #23272a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.row {
+  padding: 18px 24px;
+  border-bottom: 1px solid #2c2f33;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 600;
+  background: #5865f2;
+}
+
+.computer-header {
+  background: #3ba55c;
+}
+
+.computer-header:hover {
+  background: #2d8a4a;
+}
+
+.theme {
+  background: #2c2f33;
+  font-size: 16px;
+}
+
+.theme:hover {
+  background: #5865f2;
+  transform: translateX(4px);
+}
+
+.category-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+
+.category-content.open {
+  max-height: 2000px;
+}
+
+.skills {
+  background: #1e2124;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.skills.open {
+  max-height: 500px;
+  padding: 20px 0 28px;
+  text-align: center;
+}
+
+.skills ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.skills li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  line-height: 1.6;
+  font-size: 14.5px;
+}
+
+.skills li:last-child {
+  border-bottom: none;
+}
+
+/* ===== Contact page ===== */
+
+.contact h1 {
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  margin-top: 10px;
+  font-size: 16px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-top: 10px;
+}
+
+.contact h2 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* ===== Spotify page ===== */
+
+.spotify h1 {
+  margin-bottom: 30px;
+}
+
+.spotify .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.spotify .card {
+  background: rgba(35, 39, 42, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid rgba(29, 185, 84, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotify .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 20px rgba(29, 185, 84, 0.2);
+}
+
+.spotify .card iframe {
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  nav ul li {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  nav ul li a {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .button-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 0 15px 40px;
+  }
+
+  .table-container {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
