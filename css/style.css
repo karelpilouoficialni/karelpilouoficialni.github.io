@@ -405,6 +405,7 @@ h6.footer {
 .spotify .card iframe {
   border-radius: 12px;
   margin-top: 10px;
+  height: 352px;
 }
 
 /* ===== Mobile ===== */
